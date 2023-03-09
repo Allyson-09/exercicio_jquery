@@ -49,6 +49,11 @@ input {
     padding: 8px;
 }
 
-body div ul {
+.lista {
+    text-align: center;
+    font-size: 25px;
+}
+
+.grifado {
     text-decoration: line-through;
 }
