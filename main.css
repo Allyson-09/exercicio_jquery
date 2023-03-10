@@ -54,6 +54,7 @@ input {
     font-size: 25px;
 }
 
-.grifado {
+div.ul lista, .grifado {
+    align-items: center;
     text-decoration: line-through;
 }

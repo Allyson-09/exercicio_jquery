@@ -1,17 +1,15 @@
-$(document).ready(function(){
+$(document).ready(function() {
     
-    $('form').on('submit', function(e){
+    $('form').on('submit', function(e) {
         e.preventDefault();
 
         const tarefa = $('#nome-tarefa').val();
         const novaTarefa = $('<li></li>').text(tarefa);
-        $(tarefa).appendTo(novaTarefa);
-        novaTarefa.appendTo('dd');
-
-        $('#nome-tarefa').val('');
-
-        $("dd").click(function() {
+        $(`<li>${novaTarefa}</li>`).appendTo(tarefa);
+        $(novaTarefa).appendTo('ul');
+        $("li").click(function() {
             $(this).addClass("grifado");
         });
+        $('#nome-tarefa').val('');
     });
 });
